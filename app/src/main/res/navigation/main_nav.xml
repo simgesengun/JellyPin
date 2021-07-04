@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homepageFragment">
+
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.simgesengun.jellypinapplication.fragment.HomepageFragment"
+        android:label="HomepageFragment"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/homeToCart"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/homeToCampaignDetails"
+            app:destination="@id/campaignDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/campaignsFragment"
+        android:name="com.simgesengun.jellypinapplication.fragment.CampaignsFragment"
+        android:label="fragment_campaigns"
+        tools:layout="@layout/fragment_campaigns" >
+        <action
+            android:id="@+id/campaignsToCart"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/campaignToCampaignDetails"
+            app:destination="@id/campaignDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.simgesengun.jellypinapplication.fragment.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.simgesengun.jellypinapplication.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/profileToCart"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/campaignDetailsFragment"
+        android:name="com.simgesengun.jellypinapplication.fragment.CampaignDetailsFragment"
+        android:label="CampaignDetailsFragment"
+        tools:layout="@layout/fragment_campaign_details">
+        <argument
+            android:name="campaign"
+            app:argType="com.simgesengun.jellypinapplication.entity.Campaign" />
+    </fragment>
+</navigation>

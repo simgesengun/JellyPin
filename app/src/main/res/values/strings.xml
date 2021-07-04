@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">Jelly Pin</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="cart">Cart</string>
+    <string name="info">Info</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name_surname">Name Surname</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="register_title">Create an Account</string>
+    <string name="add_item">Add Item</string>
+    <string name="item_name">Name</string>
+    <string name="item_price">Price</string>
+    <string name="item_description">Description</string>
+    <string name="item_picture_url">Picture URL</string>
+    <string name="logout">Logout</string>
+    <string name="homepage">Homepage</string>
+    <string name="campaigns">Campaigns</string>
+    <string name="profile">Profile</string>
+    <string name="added_to_cart">%1$s added to the cart!</string>
+    <string name="price">%1$s \u0024</string>
+    <string name="check_out">Check Out</string>
+    <string name="info_message">You have bought items from %1$s different games,\nGifted %2$s people,\nAnd currently have %3$s Jelly Points!</string>
+    <string name="name_exp">%1$s - Level %2$d</string>
+    <string name="total_price">Total Price:</string>
+    <string name="cart_empty">Your cart is empty </string>
+    <string name="cart_full">You have %1$d items in your cart! </string>
+    <string name="cart_one_item">You have one item in your cart! </string>
+    <string name="new_points">"You have gained +%1$d JP! Total JP: %2$d "</string>
+    <string name="jelly_points" translatable="false"> %1$d / 100 JP </string>
+    <string name="register_success">You had registered successfully! </string>
+    <string name="error_name_surname_blank">Name Surname cannot be empty</string>
+    <string name="error_email_blank">Email cannot be empty</string>
+    <string name="error_email_invalid">Invalid email</string>
+    <string name="error_password_blank">Password cannot be empty</string>
+    <string name="error_password_length">Password cannot be this short</string>
+    <string name="error_password_invalid">Password should contain one lowercase, one uppercase, one digit, one spec char.</string>
+    <string name="password_helper">Password should at least be 8 digits, contain one lowercase, one uppercase, one digit, one spec char.</string>
+    <string name="error_phone_blank">Phone number cannot be empty</string>
+    <string name="my_orders">My Orders</string>
+    <string name="previous_purchases">Previous Purchases</string>
+    <string name="set_sale">Set for Sale</string>
+    <string name="unset_sale">Remove Sale</string>
+    <string name="all_items">All Items</string>
+    <string name="black_friday" translatable="false">Black Friday</string>
+    <string name="double_trouble">Double Trouble</string>
+    <string name="black_friday_desc">You know what\'s up… or down?</string>
+    <string name="double_trouble_desc">Buy a code and get the second one %50 off!</string>
+    <string name="campaign_min_level">Minimum level to benefit from this campaign is Level %1$d</string>
+    <string name="campaign_under_min_level">%1$s\n(You are not eligible to join this campaign)</string>
+
+</resources>

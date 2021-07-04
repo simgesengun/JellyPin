@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000"
+        motion:autoTransition="animateToEnd"
+        motion:layoutDuringTransition="ignoreRequest">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="0"
+               android:scaleX="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="0"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="50"
+               android:scaleX="0.5"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="50"
+               android:scaleY="0.5" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="50"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="80"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="80"
+               android:scaleX="3"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="80"
+               android:scaleY="3" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="100"
+               android:scaleX="10" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="100"
+               android:scaleY="10" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutJelly"
+               motion:framePosition="100"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutSplash"
+               motion:framePosition="0"
+               android:scaleY="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutSplash"
+               motion:framePosition="0"
+               android:scaleX="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutSplash"
+               motion:framePosition="50"
+               android:scaleY="0.5" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutSplash"
+               motion:framePosition="50"
+               android:scaleX="0.5" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutSplash"
+               motion:framePosition="100"
+               android:scaleY="5" />
+           <KeyAttribute
+               motion:motionTarget="@+id/frameLayoutSplash"
+               motion:framePosition="100"
+               android:scaleX="5" />
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/frameLayoutJelly" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/frameLayoutJelly"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/frameLayoutSplash"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

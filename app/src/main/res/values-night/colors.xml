@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="white_blue">#eaf6ff</color>
+    <color name="light_blue">#aedcff</color>
+    <color name="purple">#5459ff</color>
+    <color name="dark_blue">#2592ff</color>
+    <color name="black_blue">#003870</color>
+    <color name="light_bright_blue">#1EC3FF</color>
+    <color name="bright_blue">#03bcff</color>
+    <color name="semi_transparent_dark">#80000000</color>
+    <color name="light_gray">#999999</color>
+    <color name="dark_gray">#2E2E2E</color>
+    <color name="transparent">#00000000</color>
+    <color name="off_white">#EEEEEE</color>
+    <color name="red">#FF8383</color>
+    <color name="athens_gray">#FDFDFF</color>
+    <color name="pink">#fb4654</color>
+    <color name="light_pink">#fb858e</color>
+    <color name="skeleton">#DADADA</color>
+    <color name="bottom_nav_color">#191919</color>
+
+    <color name="tab_background">@color/semi_transparent_dark</color>
+    <color name="tab_text">@color/light_gray</color>
+    <color name="tab_selected_text">@color/white</color>
+    <color name="toolbar_text_color">@color/white</color>
+    <color name="text_color">#D8D8D8</color>
+
+    <color name="button_text_color">@color/off_white</color>
+    <color name="button_color">#191919</color>
+    <color name="button_ripple">#151515</color>
+    <color name="motion_layout_bottom_background">@color/white</color>
+    <color name="backgroundColorLogin">@color/dark_gray</color>
+    <color name="backgroundColorMain">@color/dark_gray</color>
+    <color name="splash_light">@color/light_bright_blue</color>
+    <color name="splash">@color/bright_blue</color>
+    <color name="splash_dark">@color/dark_blue</color>
+    <color name="dark_text_color">@color/black</color>
+    <color name="card_icon">@color/text_color</color>
+</resources>
