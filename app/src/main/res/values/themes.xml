@@ -116,10 +116,4 @@
     <style name="Text.Normal.Small" parent="Text.Normal">
         <item name="android:textSize">12sp</item>
     </style>
-    <style name="Text.Button" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:textColor">@color/white</item>
-        <item name="fontFamily">@font/acme_edited</item>
-        <item name="android:textSize">14sp</item>
-        <item name="textAllCaps">true</item>
-    </style>
 </resources>

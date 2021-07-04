@@ -129,6 +129,7 @@
                 android:onClick="@{() -> itemDetailsFragment.addToCart(item)}"
                 android:text="@string/add_to_cart"
                 android:textAppearance="@style/Text.Button"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewPrice" />
