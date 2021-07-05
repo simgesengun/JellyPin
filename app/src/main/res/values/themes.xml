@@ -96,6 +96,12 @@
     <style name="Text.Body.LightSurface" parent="Text.Body">
         <item name="android:textColor">@color/dark_text_color</item>
     </style>
+    <style name="Text.Button" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/acme_edited</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
     <style name="Text.Body.Small" parent="Text.Body">
         <item name="android:textSize">12sp</item>
     </style>

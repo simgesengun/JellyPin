@@ -5,10 +5,12 @@ import android.animation.ValueAnimator
 import android.content.SharedPreferences
 import android.graphics.*
 import android.graphics.drawable.Drawable
+import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.databinding.BindingAdapter
 import androidx.palette.graphics.Palette
@@ -72,7 +74,16 @@ fun setVisibility(floatingActionButton: FloatingActionButton, isAdmin: Int){
         1 -> floatingActionButton.visibility = View.VISIBLE
     }
 }
-
+@BindingAdapter("android:change_scale_type")
+fun changeScaleType(imageView: ImageView, isTrue: Boolean){
+    val layoutParams = imageView.layoutParams as ConstraintLayout.LayoutParams
+    if(layoutParams.dimensionRatio != null){
+        Log.e("ratio",layoutParams.dimensionRatio)
+        imageView.scaleType = ImageView.ScaleType.FIT_CENTER
+    }else{
+        imageView.scaleType = ImageView.ScaleType.CENTER_CROP
+    }
+}
 @BindingAdapter("android:sale_visibility")
 fun saleVisibility(view: View, is_on_sale: Int){
     when(is_on_sale){

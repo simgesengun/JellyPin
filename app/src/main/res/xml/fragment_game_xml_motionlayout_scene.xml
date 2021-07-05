@@ -6,9 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="500"
-        motion:autoTransition="none"
-        motion:motionInterpolator="easeIn">
+        motion:duration="500">
        <KeyFrameSet>
            <KeyAttribute
                motion:motionTarget="@+id/fabMenu"
@@ -23,22 +21,6 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:layout_height="0dp"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="0dp"
-            motion:layout_constraintTop_toBottomOf="parent"
-            android:id="@+id/frameLayoutRv" />
-        <Constraint
-            android:layout_height="0dp"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="0dp"
-            android:id="@+id/imageViewGame" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -47,16 +29,16 @@
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            motion:layout_constraintDimensionRatio="1.77"
             motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintDimensionRatio="1.77" />
         <Constraint
             android:id="@+id/frameLayoutRv"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="0dp"
             android:layout_height="0dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/imageViewGame"
-            motion:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/imageViewGame" />
     </ConstraintSet>
 </MotionScene>

@@ -18,28 +18,7 @@
         android:id="@+id/motionLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutDescription="@xml/fragment_game_motion_layout">
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.4" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineHorizontalTop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.3" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineHorizontalBottom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.9" />
+        app:layoutDescription="@xml/fragment_game_xml_motionlayout_scene">
 
         <FrameLayout
             android:id="@+id/frameLayoutRv"
@@ -74,87 +53,82 @@
                 android:background="@drawable/shadow" />
         </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/frameLayoutGame"
+        <ImageView
+            android:id="@+id/imageViewGame"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="@+id/guidelineHorizontal"
+            android:adjustViewBounds="true"
+            android:image_url_resource="@{game.picture_url}"
+            android:change_scale_type="@{true}"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewGame"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewGame"
+            app:layout_constraintStart_toStartOf="@+id/imageViewGame"
+            app:layout_constraintTop_toTopOf="@+id/imageViewGame">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineGameHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTopMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="48dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineGameHorizontalEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineGameVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
 
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:image_url_resource="@{game.picture_url}"
-                android:scaleType="centerCrop"
-                tools:appSrc="" />
+                android:id="@+id/imageViewSale"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:sale_visibility="@{onSale}"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/guidelineGameHorizontalEnd"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="@id/guidelineGameVertical"
+                app:layout_constraintTop_toTopOf="@+id/guidelineGameHorizontal"
+                app:srcCompat="@drawable/ic_sale" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="48dp"
-                android:background="@android:color/transparent">
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guidelineGameHorizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.1" />
-
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guidelineTopMargin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="48dp" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guidelineGameHorizontalEnd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.25" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guidelineGameVertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.1" />
-
-
-                <ImageView
-                    android:id="@+id/imageViewSale"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:sale_visibility="@{onSale}"
-                    android:visibility="gone"
-                    app:layout_constraintBottom_toBottomOf="@id/guidelineGameHorizontalEnd"
-                    app:layout_constraintDimensionRatio="1"
-                    app:layout_constraintStart_toStartOf="@id/guidelineGameVertical"
-                    app:layout_constraintTop_toTopOf="@+id/guidelineGameHorizontal"
-                    app:srcCompat="@drawable/ic_sale" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </FrameLayout>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="22dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
             android:src="@drawable/ic_menu"
             android:theme="@style/MyFabOverlay"
-            app:layout_constraintBottom_toBottomOf="@id/frameLayoutGame"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewGame"
             app:layout_constraintEnd_toEndOf="parent" />
 
 

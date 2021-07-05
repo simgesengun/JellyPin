@@ -104,9 +104,9 @@ class HomepageFragment : Fragment() {
 
     fun createGamesList() : ArrayList<Game> {
         return arrayListOf(
-            Game(0, "Destiny 2", "https://www.linkpicture.com/q/game_destiny2.jpg", "game_destiny2"),
-            Game(1, "Smite", "https://www.linkpicture.com/q/game_smite.jpg", "game_smite"),
-            Game(2, "Black Desert", "https://www.linkpicture.com/q/game_blackdesert.jpg", "game_blackdesert")
+            Game(0, "Destiny 2", "https://i.imgur.com/2P8rAd6.png", "game_destiny2"),
+            Game(1, "Smite", "https://i.imgur.com/Snleeb6.png", "game_smite"),
+            Game(2, "Black Desert", "https://i.imgur.com/18gEaIh.jpg", "game_blackdesert")
         )
     }
 
