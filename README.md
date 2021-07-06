@@ -26,8 +26,8 @@
 Some features that are there but not implemented with the database because the database was shared between other students:
 
 - Users can level up by earning JP (Jelly Points) with 10% of the price of each item.
-- Campaigns are launched according to certain user levels, for example, a campaign can only be launched for Level 5 and above users.
-- If you are logged in with an admin account, you can see two buttons added to the homepage. But currently account types are not implemented. I have selected an account to be the admin.
+- Campaigns are restricted to certain user levels, for example, a campaign can only be eligable for Level 5 and above users.
+- If you are logged in with an admin account, you can see two buttons added to the homepage. But currently account types are not implemented so I have selected an account to be the admin.
 
 
 ## Pages
