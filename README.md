@@ -1,7 +1,7 @@
 # :video_game: JellyPin
 **Jelly Pin is an Android mobile application made with Kotlin, where you can buy E-PINs.**
 
-<img src="/screenshots/header.png">
+<p align="center"><img src="/screenshots/header.png" width="300"></p>
 
 
 ## Table of Contents
